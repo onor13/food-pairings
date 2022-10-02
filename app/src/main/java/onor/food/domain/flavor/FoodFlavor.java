@@ -166,7 +166,7 @@ public enum FoodFlavor implements Flavor {
         @Override
         public boolean isCompatibleWith(Flavor flavor) {
             return flavor == CARAMEL || flavor == CHOCOLATE || flavor == FRUIT_LIKE
-                    || flavor == SULPHUR || flavor == WOOD;
+                    || flavor == SULPHUR || flavor == WOOD || flavor == CITRUS;
         }
     },
     ROASTED("roasted") {
@@ -336,7 +336,7 @@ public enum FoodFlavor implements Flavor {
 
         @Override
         public boolean isCompatibleWith(Flavor flavor) {
-            return flavor == MEDICINAL || flavor == MELON;
+            return flavor == MEDICINAL || flavor == MELON || flavor == HERBACEOUS;
         }
     },
     HERBACEOUS("herbaceous") {
