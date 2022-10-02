@@ -15,7 +15,7 @@ public enum FoodFlavor implements Flavor {
     BERRY("berry") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.FRUITY;
         }
 
         @Override
@@ -26,7 +26,7 @@ public enum FoodFlavor implements Flavor {
     CITRUS("citrus") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.FRUITY;
         }
 
         @Override
@@ -37,7 +37,7 @@ public enum FoodFlavor implements Flavor {
     DRIED_FRUIT("dried fruit") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.FRUITY;
         }
 
         @Override
@@ -48,7 +48,7 @@ public enum FoodFlavor implements Flavor {
     MELON("melon") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.FRUITY;
         }
 
         @Override
@@ -59,7 +59,7 @@ public enum FoodFlavor implements Flavor {
     TREE_FRUIT("tree fruit") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.FRUITY;
         }
 
         @Override
@@ -70,7 +70,7 @@ public enum FoodFlavor implements Flavor {
     TROPICAL("tropical") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.FRUITY;
         }
 
         @Override
@@ -114,7 +114,7 @@ public enum FoodFlavor implements Flavor {
     CARAMEL("caramel") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.MAILLARD;
         }
 
         @Override
@@ -125,7 +125,7 @@ public enum FoodFlavor implements Flavor {
     CHOCOLATE("chocolate") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.MAILLARD;
         }
 
         @Override
@@ -136,7 +136,7 @@ public enum FoodFlavor implements Flavor {
     MEATY("meaty") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.MAILLARD;
         }
 
         @Override
@@ -147,7 +147,7 @@ public enum FoodFlavor implements Flavor {
     NUTTY("nutty") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.MAILLARD;
         }
 
         @Override
@@ -158,7 +158,7 @@ public enum FoodFlavor implements Flavor {
     ROASTED("roasted") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.MAILLARD;
         }
 
         @Override
@@ -169,7 +169,7 @@ public enum FoodFlavor implements Flavor {
     TOASTED("toasted") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.MAILLARD;
         }
 
         @Override
@@ -191,7 +191,7 @@ public enum FoodFlavor implements Flavor {
     MEDICINAL("medicinal") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.TERPENE;
         }
 
         @Override
@@ -202,7 +202,7 @@ public enum FoodFlavor implements Flavor {
     SPICE("spice") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.TERPENE;
         }
 
         @Override
@@ -213,7 +213,7 @@ public enum FoodFlavor implements Flavor {
     SMOKE("smoke") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.TERPENE;
         }
 
         @Override
@@ -224,7 +224,7 @@ public enum FoodFlavor implements Flavor {
     PETROL("petrol") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.TERPENE;
         }
 
         @Override
@@ -235,7 +235,7 @@ public enum FoodFlavor implements Flavor {
     WOOD("wood") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.TERPENE;
         }
 
         @Override
@@ -295,13 +295,13 @@ public enum FoodFlavor implements Flavor {
 
         @Override
         public boolean isCompatibleWith(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.VEGETAL;
         }
     },
     FRUIT_LIKE("fruit like") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.VEGETAL;
         }
 
         @Override
@@ -312,7 +312,7 @@ public enum FoodFlavor implements Flavor {
     GREEN("green") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.VEGETAL;
         }
 
         @Override
@@ -323,7 +323,7 @@ public enum FoodFlavor implements Flavor {
     HERBACEOUS("herbaceous") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
-            return false;
+            return flavor == FoodFlavor.VEGETAL;
         }
 
         @Override
