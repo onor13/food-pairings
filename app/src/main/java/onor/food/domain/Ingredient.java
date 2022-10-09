@@ -4,6 +4,8 @@ import onor.food.domain.taste.Taste;
 
 public class Ingredient {
 
+    private int id;
+
     private String name;
     private Taste taste = Taste.UNKNOWN;
 
