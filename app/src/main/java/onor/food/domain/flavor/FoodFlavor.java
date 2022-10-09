@@ -1,6 +1,16 @@
 package onor.food.domain.flavor;
 
 public enum FoodFlavor implements Flavor {
+    UNKNOWN("unknown") {
+        public boolean isSubFlavorOf(Flavor flavor) {
+            return false;
+        }
+
+        @Override
+        public boolean isCompatibleWith(Flavor flavor) {
+            return false;
+        }
+    },
     FRUITY("fruity") {
         @Override
         public boolean isSubFlavorOf(Flavor flavor) {
